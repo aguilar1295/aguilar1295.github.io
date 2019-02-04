@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Lib Project</title>
+    <script src="myScript.js"></script>
+</head>
+<style>
+    .navbar {
+        overflow: hidden;
+        background-color: white;
+        font-family: "Courier New";
+    }
+
+    .navbar a {
+        float: left;
+        font-weight: bold;
+        font-size: 20px;
+        color: red;
+        background-color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-family: "Courier New";
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        color: red;
+        padding: 14px 16px;
+        background-color: white;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: white;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: red;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+<div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="index%202.html">FACTS</a>
+    <a href="index%203.html">FAMILY</a>
+    <a href="index%204.html">ART</a>
+    <a href="index%2010.html">CALCULATOR</a>
+    <a href="index%2011.html">DIGITAL MEDIA</a>
+    <div class="dropdown">
+        <button class="dropbtn">JS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="index%206.html">Animation</a>
+            <a href="index%207.html">Base Converter</a>
+            <a href="index%208.html">Mad Lib</a>
+            <a href="index%209.html">Quiz</a>
+        </div>
+    </div>
+</div>
+<style>
+    h1, h2, h3, h4, h5, h6
+    {
+        font-family: "Courier New";
+        font-size: 33px;
+        color: black;
+    }
+</style>
+<style>
+    body {
+        background-image: url("Img/BG 6.PNG");
+        background-size: 1280px 1600px;
+        background-color: white;
+    }
+</style>
+    <style>
+        body{
+            font-family: "Courier New";
+            font-weight: bold;
+            font-size: 22px;
+            color: black;
+        }
+    </style>
+
+
+<script>
+    function madLib()
+    {
+        var words=[];
+        var words0 = document.getElementById("input0").value;
+        var words1 = document.getElementById("input1").value;
+        var words2 = document.getElementById("input2").value;
+        var words3 = document.getElementById("input3").value;
+        var words4 = document.getElementById("input4").value;
+        var words5 = document.getElementById("input5").value;
+        var words6 = document.getElementById("input6").value;
+        var words7 = document.getElementById("input7").value;
+        var words8 = document.getElementById("input8").value;
+        var words9 = document.getElementById("input9").value;
+        words.push(words0, words1, words2, words3, words4, words5, words6, words7, words8, words9);
+        return words[0] + " wept for the " + words[1] + " of " + words[2] + ", the " + words[3] + " of " + words[4] + "'s " + words[5] + ", and the fall though the air of the " + words[6] + ", " + words[7] + " friend " + words[8] + " " + words[9] + ".";
+    }
+</script>
+<style>
+    .story
+    {
+        width: 900px;
+        height: 20px;
+    }
+</style>
+<br><br>
+<body>
+<center>
+    <form name="maddestLibs">
+        <h6>MAD-LIB PROJECT</h6>
+        <p>
+            NOUN : <input type="text" id="input0">
+            <br><br>
+            NOUN : <input type="text" id="input1">
+            <br><br>
+            NOUN : <input type="text" id="input2">
+            <br><br>
+            NOUN : <input type="text" id="input3">
+            <br><br>
+            NOUN : <input type="text" id="input4">
+            <br><br>
+            NOUN : <input type="text" id="input5">
+            <br><br>
+            ADJ. : <input type="text" id="input6">
+            <br><br>
+            ADJ. : <input type="text" id="input7">
+            <br><br>
+            VERB : <input type="text" id="input8">
+            <br><br>
+            NOUN : <input type="text" id="input9">
+            <br><br>
+            Result: <input class="story" type="text" name="result">
+            <br><br>
+            <button type="button" onclick="document.maddestLibs.result.value=madLib()">Story</button>
+        </p>
+
+</form>
+</center>
+</body>
+</html>

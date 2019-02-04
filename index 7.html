@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base Converter</title>
+    <script src="myScript.js"></script>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            font-family: "Courier New";
+        }
+
+        .navbar a {
+            float: left;
+            font-weight: bold;
+            font-size: 20px;
+            color: red;
+            background-color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-family: "Courier New";
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: red;
+            padding: 14px 16px;
+            background-color: white;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: red;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="index%202.html">FACTS</a>
+    <a href="index%203.html">FAMILY</a>
+    <a href="index%204.html">ART</a>
+    <a href="index%2010.html">CALCULATOR</a>
+    <a href="index%2011.html">DIGITAL MEDIA</a>
+    <div class="dropdown">
+        <button class="dropbtn">JS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="index%206.html">Animation</a>
+            <a href="index%207.html">Base Converter</a>
+            <a href="index%208.html">Mad Lib</a>
+            <a href="index%209.html">Quiz</a>
+        </div>
+    </div>
+</div>
+<style>
+    h1, h2, h3, h4, h5, h6
+    {
+        font-family: "Courier New";
+        font-size: 33px;
+        color: black;
+    }
+</style>
+<style>
+    body {
+        background-image: url("Img/BG 6.PNG");
+        background-size: 1280px 1600px;
+        background-color: white;
+    }
+</style>
+<br><br>
+<center>
+<body>
+<style>
+    body{
+        font-family: "Courier New";
+        font-weight: bold;
+        font-size: 22px;
+        color: black;
+    }
+</style>
+<center>
+    <p> ✄ ------------------------------------------------- CONVERTER PROJECTS ------------------------------------------------- ✄</p>
+</center>
+<br><br>
+<center>
+    <form name="toBinary">
+        <h4>To Binary</h4>
+        Number (base 10): <input type="text" name="input1">
+        <br><br>
+        Base (base 2): <input type="text" name="input2">
+        <br><br>
+        Result: <input type="text" name="result">
+        <br><br>
+        <button type="button" onclick="document.toBinary.result.value=tenToSmall(Number(document.toBinary.input1.value), Number(document.toBinary.input2.value))">toBinary</button>
+    </form>
+</center>
+<br><br>
+<center><p> ✄ --------------------------------- C WORK  DIVISION LINE --------------------------------- ✄</p></center>
+<br><br>
+<center>
+    <form name="binaryTo10">
+        <h5>Binary to Ten</h5>
+        Number (base 2): <input type="text" name="num1">
+        <br><br>
+        Result: <input type="text" name="result">
+        <br><br>
+        <button type="button" onclick="document.binaryTo10.result.value=smallToTen(Number((document.binaryTo10.num1.value)))">binaryTo10</button>
+        <br><br>
+
+    </form>
+</center>
+<br><br>
+<center><p> ✄ --------------------------------- B WORK  DIVISION LINE --------------------------------- ✄</p></center>
+<!-- <form name="baseConverter">
+    <h6> Base Converter </h6>
+    Number: <input type="text" name="input1">
+    <br><br>
+    Number's base: <input type="text" name="input2">
+    <br><br>
+    Desired base: <input type="text" name="goalBase">
+    <br><br>
+    Result: <input type="text" name="result">
+    <button type="button" onclick="document.baseConverter.result.value=getElementById(Number(document.baseConverter.input1.value), Number(document.baseConverter.input2.value))">Convert!</button>
+</form>
+</center> -->
+</body>
+</center>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    .navbar {
+        overflow: hidden;
+        background-color: #ff0000;
+        font-family: "Courier New";
+    }
+
+    .navbar a {
+        float: left;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        background-color: red;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-family: "Courier New";
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: red;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: black;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+<div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="index%202.html">FACTS</a>
+    <a href="index%203.html">FAMILY</a>
+    <a href="index%204.html">ART</a>
+    <a href="index%2010.html">CALCULATOR</a>
+    <a href="index%2011.html">DIGITAL MEDIA</a>
+    <div class="dropdown">
+        <button class="dropbtn">JS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="index%206.html">Animation</a>
+            <a href="index%207.html">Base Converter</a>
+            <a href="index%208.html">Mad Lib</a>
+            <a href="index%209.html">Quiz</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-image: url("Img/BG 10.PNG");
+        background-size: 1200px 1700px;
+        background-color: black;
+    }
+</style>
+
+<br><br>
+<center>
+    <body>
+
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <br>
+    <br><br>
+    <button type="button" onclick="startAnimation()">START</button>
+    </body>
+</center>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GALLERY</title>
+</head>
+<body>
+<style>
+    body {
+        background-image: url("Img/BG 5.PNG");
+        background-size: 600px 400px;
+        background-color: black;
+    }
+</style>
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Courier New";
+    }
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        opacity: 100%;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+        position: relative;
+        display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+    <p>ART GALLERY</p>
+    <p><a href="index%204.html">GO BACK</a></p>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="Img/ART%201.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%202.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%203.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%204(1).PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+</div>
+<br><br>
+<div class="row">
+    <div class="column">
+        <img src="Img/ART%209.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%2010.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%2011.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%2012.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+</div>
+<br><br>
+<div class="row">
+    <div class="column">
+        <img src="Img/ART%205.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%206.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%207.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="Img/ART%208.PNG" width="300px" height="300px" onclick="myFunction(this);">
+    </div>
+</div>
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+</div>
+
+<script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+</script>
+
+<!-- Thank you to w3schools for the image template and  for the image url feature.
+Also, thank you to Mr. K for teaching me the basics of HTML -->

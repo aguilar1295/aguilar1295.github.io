@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script src="myScript.js"></script>
+</head>
+</head>
+<style>
+    .navbar {
+        overflow: hidden;
+        background-color: white;
+        font-family: "Courier New";
+    }
+
+    .navbar a {
+        float: left;
+        font-weight: bold;
+        font-size: 20px;
+        color: red;
+        background-color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-family: "Courier New";
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        color: red;
+        padding: 14px 16px;
+        background-color: white;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: white;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: red;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+<div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="index%202.html">FACTS</a>
+    <a href="index%203.html">FAMILY</a>
+    <a href="index%204.html">ART</a>
+    <a href="index%2010.html">CALCULATOR</a>
+    <a href="index%2011.html">DIGITAL MEDIA</a>
+    <div class="dropdown">
+        <button class="dropbtn">JS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="index%206.html">Animation</a>
+            <a href="index%207.html">Base Converter</a>
+            <a href="index%208.html">Mad Lib</a>
+            <a href="index%209.html">Quiz</a>
+        </div>
+    </div>
+</div>
+<style>
+    h1, h2, h3, h4, h5, h6
+    {
+        font-family: "Courier New";
+        font-size: 33px;
+        color: black;
+    }
+</style>
+<style>
+    body {
+        background-image: url("Img/BG 6.PNG");
+        background-size: 1280px 1600px;
+        background-color: white;
+    }
+</style>
+<center>
+
+    <style>
+        body{
+            font-family: "Courier New";
+            font-weight: bold;
+            font-size: 22px;
+            color: black;
+        }
+    </style>
+</center>
+
+<center>
+    <form name="reward">
+    <gif id="gabs" src="Gif/ga" height="400" style = "display:none" ></gif>
+<br><br>
+PASSWORD:
+        <br><br>
+        <input type="text" name="password" placeholder="">
+        <br><br>
+<button type="button" onclick="document.result.value=passwordReward()">Reward!</button>
+</form>
+</center>
+
+<br><br>
+<form name="quiz">
+    <center>
+        <body>
+    <br><br><br>
+    Q1: What is Blake's Myers Briggs personality type? <br>
+    <input type="text" name="a1"> <!-- a1 stands for answer 1 -->
+    <br><br><br>
+    Q2: What is Blake's son's name? <br>
+    <input type="text" name="a2">
+    <br><br><br>
+    Q3: How many siblings does Blake have?
+    <br><br>
+    <input type="radio" name="a3" value="1">1<br>
+    <input type="radio" name="a3" value="2">2<br>
+    <input type="radio" name="a3" value="3">3<br>
+    <input type="radio" name="a3" value="4">4<br>
+    <br><br>
+    Q4: What is Blake's 4B class?
+    <br><br>
+    <input type="radio" name="a4" value="Stay Fit For Life">Stay Fit For Life<br>
+    <input type="radio" name="a4" value="AP Lit and Comp">AP Literature and Composition<br>
+    <input type="radio" name="a4" value="AP Calculus A+B">AP Calculus A+B<br>
+    <input type="radio" name="a4" value="AP Comp Sci">Ap Computer Science Principles<br>
+    <br><br>
+    Q5: What are Blake's hobbies?
+    <br><br>
+    <input type="checkbox" name="a5A" value="Drawing">Drawing<br>
+    <input type="checkbox" name="a5B" value="Coding">Coding<br>
+    <input type="checkbox" name="a5C" value="Running">Running<br>
+    <input type="checkbox" name="a5D" value="Writing">Writing<br>
+    <input type="checkbox" name="a5E" value="Relaxing">Relaxing<br>
+    <br><br>
+    Q6: What does Blake like to draw?
+    <br><br>
+    <input type="checkbox" name="a6A" value="Dragons">Dragons<br>
+    <input type="checkbox" name="a6B" value="Angels">Angels<br>
+    <input type="checkbox" name="a6C" value="Warriors">Warriors<br>
+    <input type="checkbox" name="a6D" value="Guitars">Guitars<br>
+    <input type="checkbox" name="a6E" value="Comics">Comics<br>
+    <br><br><br>
+    <button type="button" onclick="quizAnswers()">Answers!</button>
+        </body>
+</center>
+</form>
+</html>
